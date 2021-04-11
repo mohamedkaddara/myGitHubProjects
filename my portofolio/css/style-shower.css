@@ -1,0 +1,535 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 255, 255, 1); 
+}
+
+:root {
+    --primary-color: #ff5722;
+    --secendary-color: #009688;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+  }
+/*  INTRO ************************/
+
+.intro .intro-info{
+    box-shadow: 10px 10px 10px #000;
+    width: 420px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .7);   
+    padding: 0 10px;
+    animation: animateLeft 1.2s ease-in;
+}
+.intro .intro-info h3{
+    color: var(--secendary-color);
+    font-size: 27px;   
+}
+
+.intro .intro-info h4{
+    color: var(--dark-color);
+    font-size: 22.5px;
+    padding: 7px;
+    margin: 00 8px;   
+}
+
+.intro .intro-info p{
+   font-size: 18px;
+}
+
+.intro .login-form{  
+    position: relative;
+    box-shadow: 10px 10px 10px #000;
+    width: 420px;
+    height:450px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 0 10px;
+    animation: animateRight 1.2s ease-in;
+}
+.intro .login-form label:first-child{
+    color: var(--secendary-color);
+    text-align: center;
+    font-size: 27px;
+    
+    
+}
+.intro .login-form label,
+.intro .login-form input{
+    margin: auto;
+    text-align: center;
+    margin: 4px auto;
+}
+.intro .login-form label{
+    position: relative;
+    color: var(--dark-color);
+    text-align: center;
+    font-weight: bolder;
+    width: auto;
+}
+.intro .login-form label span{
+    position: absolute;
+    color: red;
+    left: 140px;
+    top: 10px;
+    font-size: 24px;  
+}
+
+.check{
+    position: absolute;
+    left: 30px;
+    font-size: 14px;
+}
+.mail-info{
+    margin-bottom: 20px;
+}
+.mail-info.pw{
+    margin-bottom: 25px;
+}
+/**************************************/
+.intro .login-form input[type="email"],
+.intro .login-form input[type="password"]{
+    height: 30px;
+    width: 280px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    border:2px var(--primary-color) solid;
+    transition: all .3s ease-in-out;
+    margin-bottom: 0;
+}
+
+.intro .login-form input:focus{
+    width: 350px;
+    border:2px var(--secendary-color) solid;
+}
+.intro .login-form i{
+   color: var(--dark-color);
+   font-size: 18px;
+}
+.intro .login-form i.fas.fa-userd::after{
+    content: " Email";
+}
+.intro .login-form i.fas.fa-user-lock::after{
+    content: " PassWord";
+}
+
+.intro .login-form input[type="submit"]{
+    height: 40px;
+    width: 130px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color:var(--secendary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: all .3s ease-in-out;   
+}
+
+.intro .login-form input[type="submit"]:hover{
+    background-color: var(--primary-color);
+}
+.intro .login-form label h4{
+   
+    border-radius: 20px;
+    padding: 8px 5px;
+    cursor: pointer;
+    width: 250px;
+    display: block;
+    margin: 10px auto;
+    background-color: var(--dark-color);
+    color: #fff;
+    font-size: 16px;
+    transition: all .3 ease-in-out;
+}
+.intro .login-form label h4:hover{
+    background-color: var(--secendary-color);
+}
+
+/*******    new accout  *******************/
+.create-account{
+    position: relative;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .6s ease-in-out;
+    display: none;
+}
+
+.create-account-box .fas.fa-window-close{
+position: absolute;
+right: 15px;
+top: 15px;
+font-size: 30px;
+background-color: none;
+color: var(--secendary-color);
+border-radius: 50%;
+cursor: pointer;
+transition: all .2s ease-in-out;
+}
+.create-account-box .fas.fa-window-close:hover{
+    color: var(--primary-color);
+}
+
+.create-account-box{
+    position: fixed;
+    padding-top: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: auto;
+    background-color: rgba(255, 255, 255,1);
+    z-index: 1000;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #000;
+    animation: animateCard .3s ease-in;
+}
+
+.create-account-box label{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    padding: 4px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+.create-account-box input{
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 280px;
+    height: 15px;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 2px #333 solid;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    outline: none;
+    padding: 4px 0;
+    transition: all .3s ease-in-out;
+}
+.create-account-box input:focus{
+    border-color: var(--primary-color);
+    width: 320px;
+}
+.create-account-box .selectBox{
+ text-align: center;   
+ padding: 10px;
+ margin-top: -17px;
+ margin-bottom: 5px;
+}
+.create-account-box .selectBox select{
+    border: 1px #333 solid;
+    outline: none;
+    width: 55px;
+    text-align: center;
+    cursor: pointer;
+    height: 18px;
+    border-radius: 3px;
+}
+
+.create-account-box input[type='submit']{
+    width: 140px;
+    height: 45px;
+    color: #fff;
+    background-color: var(--secendary-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.create-account-box input[type='submit']:hover{
+    background-color: var(--primary-color);
+}
+
+/***************************    slide-show  ************************/
+.slide-show{
+    width: auto;
+    position: relative;
+    margin: 45px auto;
+    background-color: rgba(0, 0, 0, .5);
+    padding-bottom: 25px;
+}
+.slide-show h2{
+    margin: auto;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    font-size: 22px;
+    padding: 15px 20px 15px 20px;
+}
+.slide-show h2 i{
+    color: #beff22f7;
+}
+.slide-show .img-slide{
+    display: block;
+    margin:10px auto;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    border: 8px #eee solid;
+
+}
+.slide-show .img-slide img {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    height: 400px; 
+    box-shadow: 10px 10px 15px;
+}
+
+.slide-show .img-slide h4{
+    position: absolute;
+    left: 51.5%;
+    bottom:0;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    padding: 15px;
+    width: 600px;
+    box-sizing: border-box;
+    z-index: 10;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+.slide-show .img-slide span{
+    position: absolute;
+    left: 15;
+    bottom: 60px;
+    color: var(--primary-color);
+    padding: 15px;
+    z-index: 15;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+i.fa-chevron-left,
+i.fa-chevron-right{
+    font-size: 50px;
+    color: #fff;
+   cursor: pointer;
+   transition: all .2 ease-in-out;
+}
+i.fa-chevron-left:hover,
+i.fa-chevron-right:hover{
+    color: var(--primary-color);
+}
+.fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    left: 3%;
+}
+.fa-chevron-right{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 3%;
+}
+
+/* second slide show    */
+.second-slide{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 65px 0;
+    margin: 40px 0;
+}
+.second-slide .container{
+    width: 65%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0;
+}
+.slide-content{
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    transition: all .7s cubic-bezier(0.79, 1.21, 0.58, 1);
+}
+.card-slider{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    transition: all .7s cubic-bezier(0.79, 1.21, 0.58, 1);
+}
+.card-slider img{
+    width: 100%;
+    height: 400px;
+}
+.card-slider h3{
+    position: relative;
+    bottom: 110px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, .7);
+    color: #333;
+}
+.second-slide i{
+    z-index: 100;
+}
+
+
+/****************************************************************/
+.slide-three-content{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 40px 10px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+.slide-three-content i.fas.fa-chevron-left{
+    position: absolute;
+    font-size: 80px;
+    color: #ddd;
+    z-index: 101;
+    left: 120px;
+}
+.slide-three-content i.fas.fa-chevron-right{
+    position: absolute;
+    font-size: 80px;
+    color: #ddd;
+    z-index: 101;
+    right: 120px;
+}
+.right-shadow{
+    position: absolute;
+    right: -115px;
+    top: 0;
+    height: 100%;
+    width: 115px;
+    z-index: 100;
+    box-shadow: -100px 0px 80px #fff;
+}
+.left-shadow{
+    position: absolute;
+    left: -115px;
+    background: aliceblue;
+    top: 0;
+    height: 100%;
+    width: 115px;
+    box-shadow: 115px 0 80px #fff;
+    z-index: 100;
+}
+.slide-3{
+    display: flex;
+    justify-content: space-around;
+    width: 4080px;
+    position: relative;
+    right: 100%;
+    transition: all .8s ease-out;
+}
+.slide-3 .slide-card3{
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    padding: .5px;
+    box-shadow: 0px 0px 25px #eee;
+    margin: 0 20px;
+}
+.slide-3 .slide-card3 .img-area{
+    width: 100%;
+    height: 400px;
+}
+.slide-card3 .img-area img{
+    width: 100%;
+    height: 100%;
+}
+.slide-card3 .desrc-area{
+    width: 100%;
+}
+.desrc-area{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    color: #333;
+    width: 100%;
+    padding: 10px;
+}
+
+/*************************************************************************************/
+@keyframes animateCard{
+
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 100%;
+    }
+}
+@keyframes animateRight{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animateLeft{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animateTop{
+    0%{
+        transform: translateY(-1000px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes animateBottom{
+    0%{
+        transform: translateY(1000px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/frames.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/web-fonts-with-css/css/fontawesome-all.min.css">
+    <title>M.K Portofolio</title>
+</head>
+
+<body>
+    <!-- go top -->
+    <img src="../images/undraw_going_up_ttm5.svg" alt="" class="up">
+    <!-- end go top -->
+
+    <div class="nav-in-s-screen">
+        <i class="fas fa-align-justify"></i>
+        <div class="hidden-list">
+            <div class="list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projectPage.html">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <i class="fab fa-facebook-square scole-hover"></i>
+        <i class="fab fa-youtube-square scole-hover"></i>
+        <i class="fab fa-git-square scole-hover"></i>
+    </div>
+    <!-- end icons -->
+
+    <div class="nav">
+        <div class="container">
+
+            <div class="logo">
+                <h1>M.K Portofolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projectPage.html">Works</a></li>
+                    <li><a href="#" class="scrollDown">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- buttons Serveices -->
+    <div class="btn-services">
+
+        <div class="btn-service grid">
+
+            <div class="s2">
+                <h3></h3>
+                <p></p>
+            </div>
+
+            <div class="s1">
+                <a href="projectPage.html"><button class="red-btn scole-hover">My Projects</button></a>
+                <a href="one.docx" download="one.docx"><button class="blue-btn scole-hover">DownLoad my CV</button></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="review">
+
+        <h3>My Skills</h3>
+        <div class="my-card_infos">
+            <img src="" alt="">
+            <h4></h4>
+            <p></p>
+
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+
+            <button class="scole-hover">Suprise Me</button>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer grid4 center">
+                <div class="card">
+                    <h3>All Rights Are Reserved &copy</h3>
+                    <h4 class="text-white">Created By Mohamed kaddara & Mohamed Hbata</h4>
+                </div>
+                <div class="card">
+                    <h3>CONTACT US  </h3>
+                    <h4 class="text-white">TET: +212 698756547 <br>
+                        EMAIL: kadara210@gmail.com <br>
+                        ADRESSE: Ksar El Kebir
+                    </h4>
+                </div>
+                <div class="card">
+                    <h3>OUR SERVICES</h3>
+                    <h4 class="text-white">Online Shop <br> Programing Service <br> Blog  </h4>
+                </div>
+                <div class="card">
+                    <h3>FOLLOW US ON</h3>
+                    <h4 class="text-white">
+                        <i class="fab fa-facebook-square scole-hover"></i>
+                        <i class="fab fa-youtube-square scole-hover"></i>
+                        <i class="fab fa-git-square scole-hover"></i>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/shower.js"></script>
+    <script src="../js/goTop.js"></script>
+    <script src="../js/hiddenList.js"></script>
+    <script src="../js/marginTop.js"></script>
+    <script src="../js/goToFooter.js"></script>
+    <script>
+        let nav1 = document.querySelector('.nav'),
+        btnServices = document.querySelector('.btn-services');
+
+
+        function marginBody(){ 
+            btnServices.style.marginTop = `${nav1.offsetHeight}px`;
+        }
+        marginBody();
+        //////////////////////////////////////////////////////////////////////////
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+:root {
+    --primary-color: #ff5722;
+    --secendary-color: #009688;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --nav-color: #f44336cc;
+  }
+a{
+    text-decoration: none;
+}
+.overlayP{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 0;
+}
+
+.svg-show {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 70px 0;  
+    background-image: url('../images/pinsel.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;     
+}
+
+.svg-show img{
+    margin: 50px 0;
+    width: 100%;
+    float: left
+}
+
+/* #6c63ff */
+.svg{
+    float: right;
+}
+
+.svg-show .title-project{
+    height: 100%;
+    position: relative;
+    float: left;
+    
+}
+.title-project h2{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    background-color: var(--secendary-color);
+    color: #fff;
+    padding: 12px;
+    display: block;
+    margin: 90px auto;
+    width: 250px;
+    border-radius: 10px;
+}
+.title-project h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-family: monospace;
+    font-size: 25px;
+    color: var(--light-color);
+    text-align: center;
+}
+.title-project .fas.fa-angle-down{
+    text-align: center;
+    font-size: 85px;
+    color: var(--primary-color);
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+.title-project .fas.fa-angle-down:hover{
+    transition: all .6s ease-in-out;
+    transform: scale(.90);
+}
+.media-project{
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+
+}
+.media-project a i{
+    font-size: 35px;
+    margin-left: 12px;
+    cursor: pointer;    
+    color: var(--light-color);
+}
+.media-project a i:hover{
+    transition: all .3s ease-in-out;
+    transform: translateY(-5px);
+    color: var(--secendary-color);
+}
+/**********     PROJECT CARDS   *****************/
+.project-cards{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.project-card{
+    width: 60%;
+    height: auto;
+    margin: 80px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 224, 224);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #111;
+    text-align: center;
+}
+.animate-left{
+    opacity: 0;
+    transform: translateX(-1000px);
+}
+
+.animate-right{
+    opacity: 0;
+    transform: translateX(1000px);
+}
+
+.animate-left[data-scroll="in"]{
+    opacity: 1;
+    transition: all 1.2s ease-in-out;
+    transform: translateX(0px);
+}
+.animate-right[data-scroll="in"]{
+    opacity: 1;
+    transition: all 1.2s ease-in-out;
+    transform: translateX(0px);
+}
+
+.project-card .pic-card{
+    width: 100%;
+    text-align: center;
+}
+.project-card .pic-card img{
+    width: 80%;
+    height: 80%;
+}
+.project-card .info-card{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+}
+.project-card .info-card h1{
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-family: monospace;
+    font-size: 28px;
+    color: var(--dark-color);
+}
+.project-card .info-card p{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+.project-card .info-card a{
+    color: #000;
+}
+.project-card .info-card h4{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 200px;
+    font-size: 17px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border: 2px var(--primary-color) solid;
+}
+.project-card .info-card h4:hover{
+    transition: all .4s ease-in-out;
+    background-color: var(--light-color);
+    color: #222;
+    border: 2px #222 solid;
+
+}
+
+/**********************************************/
+.svg-show .svg{
+    float: right;
+}
+/*************************************************************************************/
+@keyframes animateCard{
+
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 100%;
+    }
+}
+@keyframes animateRight{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animateLeft{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animateTop{
+    0%{
+        transform: translateY(-1000px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes animateBottom{
+    0%{
+        transform: translateY(1000px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}

@@ -1,0 +1,124 @@
+@media (max-width: 960px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .btn-service .s1,
+    .btn-service .s2{
+        float: none;
+        margin-top: 0;
+    }
+    .btn-service .s1{
+        display: grid;
+    }
+    .red-btn ,
+    .blue-btn{
+        margin: 0 0;
+    }
+    footer .grid4{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 750px){
+    body{
+        background-image: url('../images/4.jpg');
+    }
+
+     i.fas.fa-align-justify{
+         display: block;
+     }
+     nav{
+         display: none;
+     }
+     .nav .logo h1{
+        font-size: 30px;
+    }
+
+    /*  REVIEW */
+    .review{
+        width: 450px;
+        height: 550px;
+    }
+
+    .review .my-card_infos .fas.fa-angle-left{
+        bottom: 70px;
+        left: 185px;
+     }
+    
+     .review .my-card_infos .fas.fa-angle-right{
+        bottom: 70px;
+        right: 185px;
+     }
+
+     /* slide show */
+     .slide-show{
+         width: auto;
+     }
+     .slide-show .img-slide{
+        width: 400px;
+        height: 290px;
+    }
+    .slide-show .img-slide img {
+        width: 400px;
+        height: 290px;
+    }
+    .slide-show .img-slide h4{
+        width: 400px;
+        padding-top: 23px;
+        bottom: -10px;
+        font-size: 14px;
+    }
+    .slide-show .img-slide span{
+        bottom: 50px;
+    }
+    footer .grid4{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*  project page    */
+    .project-card.grid34{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .project-card{
+        height: auto;
+    }
+    /*********************************************/
+    .pub-bar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+    }
+    /***************************************/
+    .intro .intro-info{
+        animation: animateTop 1.2s ease-in;
+    }
+    .intro .login-form{
+        animation: animateBottom 1.2s ease-in;
+    }
+    
+    
+}
+
+@media (max-width:520px){
+
+    .review{
+        width: 400px;
+        height: 520px;
+    }
+
+    .review .my-card_infos .fas.fa-angle-left{
+        bottom: 70px;
+        left: 165px;
+     }
+    
+     .review .my-card_infos .fas.fa-angle-right{
+        bottom: 70px;
+        right: 165px;
+     }
+     
+
+
+}

@@ -1,0 +1,61 @@
+.local-storage{
+    position: relative;
+    margin: 200px auto;
+    width: 50%;
+    background-color: #ddd;
+    border-radius: 15px;
+    height: auto;
+    padding: 12px;
+}
+.local-storage #the-input{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-family: cursive;
+}
+.local-storage #the-input:focus{
+    outline: none   ;
+}
+.local-storage .buttons{
+    width: 95%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around
+}
+.buttons span{
+    text-align: center;
+    background-color: seagreen;
+    padding: 10px;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.buttons span:hover{
+    transition: all .3s ease-in;
+    transform: scale(1.03);
+}
+.result{
+    width: 95%;
+    margin: auto;   
+    background-color: #0fff6452;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.result span {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #f44336;
+    text-align: center;
+}

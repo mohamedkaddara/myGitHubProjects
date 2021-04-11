@@ -1,0 +1,351 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('../images/5.jpg');
+    background-position: top;
+    background-attachment: fixed; 
+    background-size: cover;
+    z-index: -10;
+    background-color: rgba(0, 0, 0,.2);
+}
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ff5722;
+    --secendary-color: #009688;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --nav-color: #f44336cc;
+  }
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.social-media{
+    position: fixed;
+    display: inline-grid;
+    height: 60%;
+    top: 20%;
+    left: 10px;
+    border-radius: 31px;
+    background-color: #fff;
+    z-index: 999;
+    padding: 0 7px;
+    box-shadow: 10px 10px 10px #333;
+    animation: animateBottom 1.2s ease-in;
+}
+.social-media i{
+    font-size: 40px;
+    margin: auto;
+    color: var(--secendary-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+
+i.fas.fa-align-justify{
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    font-size: 45px;
+    color: var(--light-color);
+    cursor: pointer;
+    z-index: 10000;
+    display: none;
+}
+i.fas.fa-align-justify:hover{
+    color: #fff;
+    transition: all .4 ease-in-out;
+}
+
+.hidden-list{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.87);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+
+
+
+.hidden-list ul li,
+.hidden-list ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 42px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.hidden-list ul li:hover,
+.hidden-list ul li a:hover{
+    color: var(--light-color);
+    text-decoration: underline;
+    transition: all .3 ease-in-out;
+}
+
+/*************************************/
+.nav{
+    width: 100%;
+    background-color: var(--nav-color);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.nav .logo{
+ width: max-content;   
+}
+
+.nav .logo h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 0 0;
+    display: inline;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: var(--light-color);
+}
+
+.nav nav ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav nav ul li{
+margin-left: 12px;
+}
+
+.nav nav ul li a::after{
+    content: " |";
+}
+
+.nav nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.nav nav ul li a{
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+
+/****************  services buttons  *************/
+.red-btn ,
+.blue-btn {
+    width: 200px;
+    height: 60px;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-style: none;    
+    outline: none;
+    margin: 0 10px;
+}
+
+.btn-services{
+    background-color: rgba(0, 0, 0,.3);
+    margin-bottom: 40px;
+}
+
+.btn-services .s1{
+    width: auto;
+    float: right;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.btn-services .s2{
+    width: auto;
+    float: left;
+    background-color: rgba(0, 0, 0,.5);
+    height: 600px;
+    color: #fff;
+    padding: 70px 70px;
+    margin: 0;
+}
+.btn-service h3{
+    font-family: monospace;
+    font-size: 35px;
+    line-height: 45px;
+}
+.btn-service h3 span{
+    padding-top: 20px;
+    color: var(--primary-color);
+}
+
+
+
+/*********************** Reviews  **********************/
+.review{
+    position: relative;
+    margin: auto;
+    width: 680px;
+    height: 530px;
+    background-color: rgba(255, 255, 255,.8);
+    color: #333;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 15px 15px 10px #000;
+    padding: 5px;
+}
+
+.review img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 2.5px #000 solid;
+    border-radius: 50%;
+    background-color: #008b51;
+    padding: 3px;
+    
+}
+
+.review .my-card_infos i{
+    position: absolute;
+    font-size: 55px;
+    cursor: pointer;
+ }    
+
+ .review .my-card_infos .fas.fa-angle-left{
+    bottom: 75px;
+    left: 300px;
+ }
+
+ .review .my-card_infos .fas.fa-angle-right{
+    bottom: 75px;
+    right: 300px;
+ }
+ .review .my-card_infos button{  
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 35px;
+    font-size: large;
+    background-color: #008b51;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+ }
+
+/****************   footer  *************/
+
+footer{
+    background-color: rgba(0, 0, 0,.87);
+    padding: 10px;
+}
+
+.footer .card h3{
+    display: flex;
+    justify-content: center;
+    align-items: left; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--secendary-color);
+    margin: 10px 0;
+}
+.footer .card h4{
+    font-size: 14px;
+    text-align: center;
+    padding-left: 20px;
+    height: max-content;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer .card h4 i{
+    padding: 0 15px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/************   SVG **************************/
+
+
+/*************************************************************************************/
+@keyframes animateCard{
+
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 100%;
+    }
+}
+@keyframes animateRight{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animateLeft{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animateTop{
+    0%{
+        transform: translateY(-1000px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes animateBottom{
+    0%{
+        transform: translateY(1000px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
